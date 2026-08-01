@@ -9,17 +9,17 @@ to swap knowledge for free — no tuition fees, no coaching centers.
 This repo is a **front-end prototype**: a clickable mockup of the core user flow, built to
 demonstrate the product concept and UI/UX before backend development.
 
-🔗 **Live demo:** _add your deployed link here (e.g. Vercel/Netlify) once hosted_
 
 ---
 
 ## Preview
 
-_Add screenshots or a screen recording here, e.g.:_
 
 ```md
-![Home screen](./screenshots/home.png)
-![Chat screen](./screenshots/chat.png)
+![Home screen](<img width="1407" height="899" alt="Screenshot 2026-08-02 024516" src="https://github.com/user-attachments/assets/f7e7cb0f-4f90-44a6-b9ad-11baf69e50a5" />
+)
+![Chat screen](<img width="1405" height="894" alt="Screenshot 2026-08-02 024557" src="https://github.com/user-attachments/assets/7dcbf229-e830-4a15-a496-271219e40059" />
+)
 ```
 
 ## Features
