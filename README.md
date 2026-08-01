@@ -1,92 +1,82 @@
-# Oporajito — Prototype / Demo
+# Oporajito
 
-This is a **clickable, front-end-only prototype** of Oporajito for your proposal (Section 11).
-It uses fake/sample data (no backend, no database, no real SMS) so it's quick to run and
-purely for showing what the app could look like: Login → OTP → Home/Search → Chat → Profile.
+**Learn a skill. Teach a skill. No money needed — just neighbors.**
 
-Built with React + Vite. Styled to look like a real mobile app, in a Bangladesh-inspired
-green/marigold palette.
+Oporajito is a concept web app for hyperlocal skill-sharing in Bangladesh. Neighbors list
+the skills they can teach and the skills they want to learn, then connect with people nearby
+to swap knowledge for free — no tuition fees, no coaching centers.
 
----
+This repo is a **front-end prototype**: a clickable mockup of the core user flow, built to
+demonstrate the product concept and UI/UX before backend development.
 
-## 1. Install prerequisites (one-time)
-
-You need **Node.js** installed (this gives you `npm`).
-
-1. Go to https://nodejs.org
-2. Download and install the **LTS** version (big green button).
-3. To check it worked, open a terminal and run:
-   ```
-   node -v
-   npm -v
-   ```
-   Both should print a version number.
-
-You also need **VS Code**: https://code.visualstudio.com
+🔗 **Live demo:** _add your deployed link here (e.g. Vercel/Netlify) once hosted_
 
 ---
 
-## 2. Open the project in VS Code
+## Preview
 
-1. Unzip `oporajito-prototype.zip` somewhere on your computer (e.g. Desktop).
-2. Open **VS Code**.
-3. Go to **File → Open Folder...** and select the unzipped `oporajito-prototype` folder.
+_Add screenshots or a screen recording here, e.g.:_
 
----
-
-## 3. Install dependencies
-
-1. In VS Code, open a terminal: **Terminal → New Terminal** (or `` Ctrl+` ``).
-2. Make sure you're inside the `oporajito-prototype` folder (the terminal prompt should show it).
-3. Run:
-   ```
-   npm install
-   ```
-   This downloads the packages the project needs. It only takes a minute, and you only
-   need to do this once (or again if you delete the `node_modules` folder).
-
----
-
-## 4. Run the app
-
-In the same terminal, run:
-
+```md
+![Home screen](./screenshots/home.png)
+![Chat screen](./screenshots/chat.png)
 ```
+
+## Features
+
+- **Phone-based login flow** — mobile number entry + OTP verification screen
+- **Skill search & discovery** — search bar, skill tags, and district filters to find nearby neighbors
+- **Neighbor cards** — ratings, distance, and skills offered at a glance
+- **In-app chat** — inbox and live message thread between neighbors, keeping phone numbers private
+- **Profile** — bio, skills taught / skills wanted, star ratings, and reviews
+- Mobile-first design, presented in a phone-frame layout
+
+## Tech stack
+
+- **React** (Vite)
+- **React Router** for navigation
+- Plain CSS with a custom design-token system (no UI framework)
+- All data is local mock data — no backend, database, or real SMS integration (yet)
+
+## Getting started
+
+**Requirements:** [Node.js](https://nodejs.org) (LTS) and npm.
+
+```bash
+git clone https://github.com/Ga-lib/oporajito-prototype.git
+cd oporajito-prototype
+npm install
 npm run dev
 ```
 
-You'll see something like:
+Then open the local URL Vite prints (usually `http://localhost:5173`).
+
+## Try the flow
+
+1. **Login** — enter any phone number → *Send verification code*
+2. **OTP** — enter any 6 digits → *Verify & continue*
+3. **Home** — search a skill, filter by district or tag, tap *Request* on a neighbor
+4. **Chats** — open a conversation and send a message
+5. **Profile** — view/edit bio and skills, see ratings and reviews
+
+## Project structure
 
 ```
-  VITE  ready in 400 ms
-  ➜  Local:   http://localhost:5173/
+src/
+  components/   Reusable UI (nav bar, neighbor card, star rating)
+  data/         Mock data (users, neighbors, conversations)
+  pages/        Screens (Login, Otp, Home, Profile, ChatList, ChatThread)
+  App.jsx       Routes + phone-frame app shell
+  index.css     Design tokens & global styles
 ```
 
-Hold `Ctrl` (or `Cmd` on Mac) and click that `http://localhost:5173/` link — or copy it
-into your browser. The app will open there.
+## Roadmap
 
-To stop the server later, click into the terminal and press `Ctrl + C`.
+- Backend API (FastAPI) with real phone OTP auth (Firebase)
+- MongoDB for user profiles, skills, and reviews
+- Real-time chat
+- District-wide skill matching and notifications
 
----
+## Author
 
-## 5. Try the flow (for your screenshots)
-
-1. **Login** — type any phone number (e.g. `01712-345678`) → *Send verification code*.
-2. **OTP** — type any 6 digits → *Verify & continue*.
-3. **Home** — search a skill, tap a district or skill chip, tap *Request* on a neighbor card.
-4. **Chats** (bottom nav) — open a conversation, type a message and press Enter to send it.
-5. **Profile** (bottom nav) — tap *Edit* to see the editable bio/skills state.
-
-For the best-looking screenshots, keep your browser window narrow (around 450–500px wide),
-or zoom out slightly — the app is designed to look like a phone screen.
-
----
-
-## Notes
-
-- All data (users, messages, ratings) is fake and defined in `src/data/mockData.js` — feel
-  free to edit names/messages there if you want different content in your screenshots.
-- Nothing here talks to a real server, database, or SMS provider. It's a visual/interactive
-  mockup only, meant to illustrate the proposed UI and flow described in the proposal.
-- If port `5173` is already busy, Vite will automatically pick the next free port and show
-  you the correct URL in the terminal.
+Built by [Ga-lib](https://github.com/Ga-lib).
