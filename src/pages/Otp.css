@@ -1,0 +1,85 @@
+.otp-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px 32px;
+}
+
+.back-link {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 20px;
+}
+
+.otp-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.otp-sub {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin: 0 0 30px;
+  line-height: 1.5;
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.otp-digit {
+  width: 100%;
+  aspect-ratio: 1;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--green-deep);
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  outline: none;
+}
+
+.otp-digit:focus {
+  border-color: var(--green-mid);
+  background: var(--green-tint);
+}
+
+.otp-page .primary-btn {
+  background: var(--green-deep);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.otp-page .primary-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.otp-resend {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin-top: 20px;
+}
+
+.otp-resend span {
+  color: var(--marigold-deep);
+  font-weight: 700;
+}
