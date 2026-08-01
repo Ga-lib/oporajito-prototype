@@ -14,13 +14,11 @@ demonstrate the product concept and UI/UX before backend development.
 
 ## Preview
 
+# Home Screen
+<img width="1407" height="899" alt="image" src="https://github.com/user-attachments/assets/eabc7d03-fd95-4681-9538-9c97181c724f" />
+# Chat Screen
+<img width="1405" height="894" alt="image" src="https://github.com/user-attachments/assets/fe08720a-3879-4eab-bef8-5fc215f81dbe" />
 
-```md
-![Home screen](<img width="1407" height="899" alt="Screenshot 2026-08-02 024516" src="https://github.com/user-attachments/assets/f7e7cb0f-4f90-44a6-b9ad-11baf69e50a5" />
-)
-![Chat screen](<img width="1405" height="894" alt="Screenshot 2026-08-02 024557" src="https://github.com/user-attachments/assets/7dcbf229-e830-4a15-a496-271219e40059" />
-)
-```
 
 ## Features
 
